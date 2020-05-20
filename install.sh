@@ -7,3 +7,4 @@ mkdir -p .config/nvim
 ln -s $DOTKI/init.vim .config/nvim/init.vim
 mkdir -p .config/nvim/autoload
 ln -s $DOTKI/.plug.vim .config/nvim/autoload/plug.vim
+ln -s $DOTKI/gitconfig .gitconfig
