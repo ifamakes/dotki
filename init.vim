@@ -15,6 +15,7 @@ Plug 'ziglang/zig.vim'
 Plug 'rust-lang/rust.vim'
 Plug 'tpope/vim-sensible'
 Plug 'fatih/vim-go', {'do': ':GoInstallBinaries'}
+Plug 'dylnmc/vim-colors-paramount'
 call plug#end()
 
 map <F1> 1gt
