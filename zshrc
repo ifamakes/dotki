@@ -8,7 +8,7 @@ bindkey -e
 bindkey "\e[3~" delete-char
 bindkey "\e[H" beginning-of-line
 bindkey "\e[1~" beginning-of-line
-bindkey "\e[F~" end-of-line
+bindkey "\e[F" end-of-line
 # End of lines configured by zsh-newuser-install
 # The following lines were added by compinstall
 zstyle :compinstall filename '~/.zshrc'
