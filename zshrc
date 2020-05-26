@@ -28,6 +28,7 @@ setopt HIST_BEEP
 zstyle ':completion:*' matcher-list 'm:{a-z}={A-Za-z}'
 alias sdi="sudo dnf install"
 alias sai="sudo apt install"
+alias sd="sudo docker"
 alias xs="xsel -b"
 alias cal="cal -mn 2"
 alias ffmpeg="ffmpeg -hide_banner"
