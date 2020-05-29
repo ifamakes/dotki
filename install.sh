@@ -11,16 +11,18 @@ if ! [[ -x "$(command -v exa)" ]]; then
 fi
 
 cd ~
-ln -s $DOTKI/zshrc .zshrc
+ln -s $DOTKI/zshrc .zshrc 2>/dev/null
 sudo chsh $(whoami) -s /bin/zsh
 
 mkdir -p .config/nvim
-ln -s $DOTKI/init.vim .config/nvim/init.vim
+ln -s $DOTKI/init.vim .config/nvim/init.vim 2>/dev/null
 mkdir -p .config/nvim/autoload
-curl https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim -Lo .config/nvim/autoload/plug.vim
-nvim +PlugInstall +qa
+if ! [[ -f .config/nvim/autoload/plug.vim ]]; then
+	curl https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim -Lo .config/nvim/autoload/plug.vim
+	nvim +PlugInstall +qa
+fi
 
-ln -s $DOTKI/gitconfig .gitconfig
+ln -s $DOTKI/gitconfig .gitconfig 2>/dev/null
 
 mkdir -p .config/youtube-dl
-ln -s $DOTKI/youtube-dl .config/youtube-dl/config
+ln -s $DOTKI/youtube-dl .config/youtube-dl/config 2>/dev/null
