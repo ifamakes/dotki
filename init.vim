@@ -39,7 +39,7 @@ map  N <Plug>(easymotion-prev)
 let  g:EasyMotion_smartcase = 1
 map <Leader> <Plug>(easymotion-prefix)
 
-colorscheme paramount
+silent! colorscheme paramount
 
 " clang-format
 autocmd FileType c ClangFormatAutoEnable
