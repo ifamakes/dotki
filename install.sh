@@ -9,8 +9,9 @@ sudo mv exa-linux-x86_64 /usr/local/bin
 
 cd ~
 ln -s $DOTKI/zshrc .zshrc
-mkdir -p .config/nvim
+sudo chsh $(whoami) -s /bin/zsh
 
+mkdir -p .config/nvim
 ln -s $DOTKI/init.vim .config/nvim/init.vim
 mkdir -p .config/nvim/autoload
 curl https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim -Lo .config/nvim/autoload/plug.vim
