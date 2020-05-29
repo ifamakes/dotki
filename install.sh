@@ -5,7 +5,7 @@ DOTKI="$( cd "$( dirname "${BASH_SOURCE[0]}" )" >/dev/null 2>&1 && pwd )"
 if ! [[ -x "$(command -v exa)" ]]; then
 	cd $(mktemp -d)
 	curl https://github.com/ogham/exa/releases/download/v0.9.0/exa-linux-x86_64-0.9.0.zip -OJL
-	unzip exa-linux-x86_64-0.9.0.zip
+	unzip -q exa-linux-x86_64-0.9.0.zip
 	sudo mv exa-linux-x86_64 /usr/local/bin/exa
 	rm -r $(pwd)
 fi
