@@ -26,3 +26,5 @@ ln -s $DOTKI/gitconfig .gitconfig 2>/dev/null
 
 mkdir -p .config/youtube-dl
 ln -s $DOTKI/youtube-dl .config/youtube-dl/config 2>/dev/null
+
+exec zsh
