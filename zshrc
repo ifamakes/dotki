@@ -61,3 +61,5 @@ export PATH="$PATH:$HOME/.cargo/bin:/snap/bin:$HOME/.rakudo/bin:$HOME/.rakudo/sh
 export PROMPT="%F{196}%n%f@%F{10}%m%f:%F{39}%~%f%b "
 export RPROMPT="%?"
 export EDITOR="nvim"
+
+export GOPATH="$HOME/go"; export GOROOT="$HOME/.go"; export PATH="$GOPATH/bin:$PATH"; # g-install: do NOT edit, see https://github.com/stefanmaric/g
