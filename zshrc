@@ -32,6 +32,7 @@ alias xs="xsel -b"
 alias cal="cal -mn 2"
 alias ffmpeg="ffmpeg -hide_banner"
 alias ffprobe="ffprobe -hide_banner"
+alias gg="git log --oneline --graph --all"
 b() {
 	if [[ -z $1 ]]; then
 		xbacklight -get
