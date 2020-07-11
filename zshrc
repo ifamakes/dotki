@@ -33,6 +33,9 @@ alias cal="cal -mn 2"
 alias ffmpeg="ffmpeg -hide_banner"
 alias ffprobe="ffprobe -hide_banner"
 alias gg="git log --oneline --graph --all"
+o() {
+	xdg-open $@ &>/dev/null
+}
 b() {
 	if [[ -z $1 ]]; then
 		xbacklight -get
