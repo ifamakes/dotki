@@ -22,4 +22,6 @@ ln -s $DOTKI/youtube-dl .config/youtube-dl/config 2>/dev/null
 mkdir -p .config/fontconfig
 ln -s $DOTKI/fontconfig .config/fontconfig/conf.d
 
+ln -s $DOTKI/pam_environment .pam_environment
+
 exec zsh
