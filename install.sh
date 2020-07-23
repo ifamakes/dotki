@@ -20,8 +20,8 @@ mkdir -p .config/youtube-dl
 ln -s $DOTKI/youtube-dl .config/youtube-dl/config 2>/dev/null
 
 mkdir -p .config/fontconfig
-ln -s $DOTKI/fontconfig .config/fontconfig/conf.d
+ln -s $DOTKI/fontconfig .config/fontconfig/conf.d 2>/dev/null
 
-ln -s $DOTKI/pam_environment .pam_environment
+ln -s $DOTKI/pam_environment .pam_environment 2>/dev/null
 
 exec zsh
