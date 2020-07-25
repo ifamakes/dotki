@@ -1,7 +1,6 @@
 syntax on
 set undofile
 let mapleader = "\<Space>"
-set mouse=a
 
 call plug#begin()
 Plug 'easymotion/vim-easymotion'
