@@ -9,7 +9,6 @@ Plug 'ConradIrwin/vim-bracketed-paste'
 Plug 'farmergreg/vim-lastplace'
 Plug 'tpope/vim-sleuth'
 Plug 'tpope/vim-sensible'
-Plug 'dylnmc/vim-colors-paramount'
 call plug#end()
 
 map <F1> 1gt
@@ -32,3 +31,6 @@ map  n <Plug>(easymotion-next)
 map  N <Plug>(easymotion-prev)
 let  g:EasyMotion_smartcase = 1
 map <Leader> <Plug>(easymotion-prefix)
+
+set textwidth=80
+set colorcolumn=80
