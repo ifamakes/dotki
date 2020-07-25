@@ -33,3 +33,4 @@ map <Leader> <Plug>(easymotion-prefix)
 
 set textwidth=80
 set colorcolumn=80
+inoremap jh <Esc>
