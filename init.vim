@@ -7,14 +7,8 @@ call plug#begin()
 Plug 'easymotion/vim-easymotion'
 Plug 'ConradIrwin/vim-bracketed-paste'
 Plug 'farmergreg/vim-lastplace'
-Plug 'rhysd/vim-clang-format'
-Plug 'zah/nim.vim'
 Plug 'tpope/vim-sleuth'
-Plug 'junegunn/rainbow_parentheses.vim'
-Plug 'ziglang/zig.vim'
-Plug 'rust-lang/rust.vim'
 Plug 'tpope/vim-sensible'
-Plug 'fatih/vim-go', {'do': ':GoInstallBinaries'}
 Plug 'dylnmc/vim-colors-paramount'
 call plug#end()
 
@@ -38,18 +32,3 @@ map  n <Plug>(easymotion-next)
 map  N <Plug>(easymotion-prev)
 let  g:EasyMotion_smartcase = 1
 map <Leader> <Plug>(easymotion-prefix)
-
-silent! colorscheme paramount
-
-" clang-format
-autocmd FileType c ClangFormatAutoEnable
-autocmd FileType cpp ClangFormatAutoEnable
-
-" rainbow_parentheses
-augroup rainbow_lisp
-  autocmd!
-  autocmd FileType lisp,clojure,scheme RainbowParentheses
-augroup END
-
-" rust
-let g:rustfmt_autosave = 1

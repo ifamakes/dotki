@@ -11,7 +11,9 @@ ln -s $DOTKI/init.vim .config/nvim/init.vim 2>/dev/null
 mkdir -p .config/nvim/autoload
 if ! [[ -f .config/nvim/autoload/plug.vim ]]; then
 	curl https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim -#Lo .config/nvim/autoload/plug.vim
-	#nvim +PlugInstall +qa
+	if [[ -x "$(command -v nvim)" ]]; then
+		nvim +PlugInstall +qa
+	fi
 fi
 
 ln -s $DOTKI/gitconfig .gitconfig 2>/dev/null
