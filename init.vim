@@ -9,6 +9,7 @@ Plug 'itchyny/lightline.vim'
 Plug 'jdsimcoe/abstract.vim'
 Plug 'preservim/nerdtree'
 Plug 'bling/vim-bufferline'
+Plug 'sbdchd/neoformat'
 call plug#end()
 
 colorscheme abstract
@@ -18,3 +19,7 @@ inoremap jj <Esc>
 map <C-n> :NERDTreeToggle<CR>
 set hidden
 autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTree") && b:NERDTree.isTabTree()) | q | endif
+augroup fmt
+  autocmd!
+  autocmd BufWritePre * undojoin | Neoformat
+augroup END
