@@ -10,6 +10,7 @@ Plug 'jdsimcoe/abstract.vim'
 Plug 'preservim/nerdtree'
 Plug 'bling/vim-bufferline'
 Plug 'sbdchd/neoformat'
+Plug 'tpope/vim-eunuch'
 call plug#end()
 
 colorscheme abstract
