@@ -62,7 +62,7 @@ off() {
 export TERM="xterm-256color"
 export PATH="$PATH:$HOME/.local/bin:$HOME/.cargo/bin:$HOME/.yarn/bin"
 export GOPATH="$HOME/.go"
-export PROMPT="%F{196}%n%f@%F{10}%m%f:%F{39}%~%f%b "
+export PROMPT="%B%F{196}%n%f@%F{10}%m%f:%F{4}%~%f%b "
 export RPROMPT="%?"
 export EDITOR="nvim"
 eval "$(zoxide init zsh)"
