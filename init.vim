@@ -1,4 +1,5 @@
 call plug#begin()
+Plug 'Chiel92/vim-autoformat'
 Plug 'ConradIrwin/vim-bracketed-paste'
 Plug 'bling/vim-bufferline'
 Plug 'farmergreg/vim-lastplace'
@@ -25,7 +26,6 @@ autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTree") && b:NERDTree.isT
 autocmd BufRead,BufNewFile *.txt setlocal textwidth=80 colorcolumn=+1
 highlight ColorColumn ctermbg=8
 
-let g:rustfmt_autosave = 1
-let g:prettier#autoformat = 1
+autocmd BufWrite * :Autoformat
 
 colorscheme vividchalk
