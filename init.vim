@@ -18,13 +18,16 @@ call plug#end()
 
 set undofile
 set hidden
+set list
+set textwidth=79
+set colorcolumn=+1
+set shiftwidth=4
+set expandtab
+highlight ColorColumn ctermbg=8
 inoremap jj <Esc>
 
 map <C-n> :NERDTreeToggle<CR>
 autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTree") && b:NERDTree.isTabTree()) | q | endif
-
-autocmd BufRead,BufNewFile *.txt setlocal textwidth=80 colorcolumn=+1
-highlight ColorColumn ctermbg=8
 
 autocmd BufWrite * :Autoformat
 autocmd FileType text let b:autoformat_autoindent=0
