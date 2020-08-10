@@ -27,5 +27,6 @@ autocmd BufRead,BufNewFile *.txt setlocal textwidth=80 colorcolumn=+1
 highlight ColorColumn ctermbg=8
 
 autocmd BufWrite * :Autoformat
+autocmd FileType text let b:autoformat_autoindent=0
 
 colorscheme vividchalk
