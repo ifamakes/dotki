@@ -1,10 +1,10 @@
 call plug#begin()
 Plug 'Chiel92/vim-autoformat'
 Plug 'ConradIrwin/vim-bracketed-paste'
-Plug 'bling/vim-bufferline'
 Plug 'farmergreg/vim-lastplace'
 Plug 'itchyny/lightline.vim'
 Plug 'justinmk/vim-sneak'
+Plug 'mihaifm/bufstop'
 Plug 'pangloss/vim-javascript'
 Plug 'preservim/nerdtree'
 Plug 'prettier/vim-prettier'
@@ -25,6 +25,9 @@ set shiftwidth=4
 set expandtab
 highlight ColorColumn ctermbg=8
 inoremap jj <Esc>
+map <Space> <Leader>
+
+colorscheme vividchalk
 
 map <C-n> :NERDTreeToggle<CR>
 autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTree") && b:NERDTree.isTabTree()) | q | endif
@@ -32,4 +35,7 @@ autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTree") && b:NERDTree.isT
 autocmd BufWrite * :Autoformat
 autocmd FileType text let b:autoformat_autoindent=0
 
-colorscheme vividchalk
+map <leader>b :Bufstop<CR>
+map <leader>a :BufstopModeFast<CR>
+map <C-tab>   :BufstopBack<CR>
+map <S-tab>   :BufstopForward<CR>
