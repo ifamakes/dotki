@@ -3,3 +3,5 @@
 	email = "k2l8m11n2@gmail.com"
 [pull]
 	rebase = true
+[alias]
+	pushf = push --force-with-lease
