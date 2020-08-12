@@ -26,6 +26,7 @@ set expandtab
 highlight ColorColumn ctermbg=8
 inoremap jj <Esc>
 map <Space> <Leader>
+set wildmode=longest:full
 
 colorscheme vividchalk
 
