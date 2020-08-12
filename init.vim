@@ -1,5 +1,4 @@
 call plug#begin()
-Plug 'Chiel92/vim-autoformat'
 Plug 'ConradIrwin/vim-bracketed-paste'
 Plug 'farmergreg/vim-lastplace'
 Plug 'itchyny/lightline.vim'
@@ -32,9 +31,6 @@ colorscheme vividchalk
 
 map <C-n> :NERDTreeToggle<CR>
 autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTree") && b:NERDTree.isTabTree()) | q | endif
-
-autocmd BufWrite * :Autoformat
-autocmd FileType text let b:autoformat_autoindent=0
 
 map <leader>b :Bufstop<CR>
 map <leader>a :BufstopModeFast<CR>
