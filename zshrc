@@ -25,6 +25,7 @@ setopt HIST_FIND_NO_DUPS
 setopt HIST_SAVE_NO_DUPS
 setopt HIST_BEEP
 zstyle ':completion:*' matcher-list 'm:{a-z}={A-Za-z}'
+zstyle ':completion:*:ssh:*' hosts off
 alias sdi="sudo dnf install"
 alias sai="sudo apt install"
 alias sd="sudo docker"
