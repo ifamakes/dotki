@@ -1,6 +1,7 @@
 call plug#begin()
 Plug 'ConradIrwin/vim-bracketed-paste'
 Plug 'farmergreg/vim-lastplace'
+Plug 'fatih/vim-go'
 Plug 'itchyny/lightline.vim'
 Plug 'justinmk/vim-sneak'
 Plug 'mihaifm/bufstop'
