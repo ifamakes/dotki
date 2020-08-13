@@ -13,6 +13,7 @@ Plug 'tpope/vim-fugitive'
 Plug 'tpope/vim-sensible'
 Plug 'tpope/vim-sleuth'
 Plug 'tpope/vim-vividchalk'
+Plug 'ziglang/zig.vim'
 call plug#end()
 
 set undofile
