@@ -19,7 +19,6 @@ call plug#end()
 
 set undofile
 set hidden
-set list
 set textwidth=79
 set colorcolumn=+1
 set shiftwidth=4
