@@ -2,7 +2,7 @@
 HISTFILE=~/.histfile
 HISTSIZE=100000
 SAVEHIST=100000
-setopt appendhistory autocd beep nomatch
+setopt appendhistory autocd beep nomatch interactive_comments
 bindkey -e
 bindkey "\e[3~" delete-char
 bindkey "\e[H" beginning-of-line
@@ -67,3 +67,4 @@ export PROMPT="%F{196}%n%f@%F{10}%m%f:%B%F{4}%~%f%b "
 export RPROMPT="%?"
 export EDITOR="nvim"
 eval "$(zoxide init zsh)"
+source /usr/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
