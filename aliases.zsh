@@ -1,1 +1,9 @@
 alias ls=exa
+alias sdi="sudo dnf install"
+alias sai="sudo apt install"
+alias sd="sudo docker"
+alias xs="xsel -b"
+alias cal="cal -mn 2"
+alias ffmpeg="ffmpeg -hide_banner"
+alias ffprobe="ffprobe -hide_banner"
+alias gg="git log --oneline --graph --all"
