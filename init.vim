@@ -15,6 +15,7 @@ Plug 'tpope/vim-sensible'
 Plug 'tpope/vim-sleuth'
 Plug 'tpope/vim-vividchalk'
 Plug 'ziglang/zig.vim'
+Plug 'liuchengxu/space-vim-theme'
 call plug#end()
 
 set undofile
@@ -24,12 +25,13 @@ set colorcolumn=+1
 set shiftwidth=4
 set tabstop=4
 set expandtab
+set mouse=a
 highlight ColorColumn ctermbg=8
 inoremap jj <Esc>
 map <Space> <Leader>
 set wildmode=longest:full
 
-colorscheme vividchalk
+colorscheme space_vim_theme
 
 map <C-n> :NERDTreeToggle<CR>
 autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTree") && b:NERDTree.isTabTree()) | q | endif
