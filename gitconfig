@@ -7,3 +7,11 @@
 	pushf = push --force-with-lease
 [fetch]
 	prune = true
+[init]
+	defaultBranch = main
+[push]
+	default = current
+[merge]
+	conflictstyle = diff3
+[diff]
+	algorithm = histogram

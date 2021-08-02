@@ -20,7 +20,7 @@ call plug#end()
 
 set undofile
 set hidden
-set textwidth=79
+"set textwidth=79
 set colorcolumn=+1
 set shiftwidth=4
 set tabstop=4
@@ -36,7 +36,7 @@ colorscheme space_vim_theme
 map <C-n> :NERDTreeToggle<CR>
 autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTree") && b:NERDTree.isTabTree()) | q | endif
 
-map <leader>b :Bufstop<CR>
+map <leader>b :BufstopPreview<CR>
 map <leader>a :BufstopModeFast<CR>
 map <C-tab>   :BufstopBack<CR>
 map <S-tab>   :BufstopForward<CR>
