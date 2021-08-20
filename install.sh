@@ -2,7 +2,7 @@
 
 exec 3>&1
 
-# start subscript
+# start subshell
 (
 
 # get the absolute path of the script
@@ -29,31 +29,26 @@ ln -s $DOTKI/gitconfig .gitconfig
 ln -s $DOTKI/tmux.conf .tmux.conf
 
 if ! [[ -x "$(command -v exa)" ]]; then
-	# install exa
 	echo "installing exa" >&3
 	cargo install exa
 fi 
 
 if ! [[ -x "$(command -v zoxide)" ]]; then
-	# install zoxide
 	echo "installing cargo" >&3
 	cargo install zoxide
 fi
 
 if [[ ! -d $ZSH/custom/plugins/zsh-nvm ]]; then
-	# install zsh-nvm 
 	echo "installing zsh-nvm" >&3
 	git clone https://github.com/lukechilds/zsh-nvm $ZSH/custom/plugins/zsh-nvm
 fi
 
 if [[ ! -d "$ZSH/custom/plugins/zsh-syntax-highlighting" ]]; then
-	# install zsh-highlighting-syntax
 	echo "installing zsh-highlighting-syntax" >&3
 	git clone https://github.com/zsh-users/zsh-syntax-highlighting.git $ZSH/custom/plugins/zsh-syntax-highlighting
 fi
 
 if ! [[ -x "$(command -v starship)" ]]; then
-	# install starship
 	echo "installing starship" >&3
 	sh -c "$(curl -fsSL https://starship.rs/install.sh)" >&3
 fi
